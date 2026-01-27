@@ -1,4 +1,4 @@
-package com.aml.sanctionsscreeningservice.model.model;
+package com.aml.sanctionsscreeningservice.model;
 
 public enum ScreeningStatus {
     CLEAR,

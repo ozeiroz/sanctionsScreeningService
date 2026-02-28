@@ -1,4 +1,4 @@
-package com.aml.sanctionsscreeningservice.model;
+package com.aml.sanctionsscreeningservice.screening.model;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -8,6 +8,7 @@ public record Transaction(
         UUID transactionId,
         String externalTransactionId,
         String userId,
+        String fullName,
         BigDecimal amount,
         String currency,
         String merchantId,

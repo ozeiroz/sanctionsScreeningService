@@ -1,11 +1,22 @@
-package com.aml.sanctionsscreeningservice.model;
+package com.aml.sanctionsscreeningservice.screening.model;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.time.Instant;
 
+@Table(name = "screening_result")
+@Entity
 public class ScreeningResult {
     private String userId;
-    private String screeningId;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long screeningId;
     private ScreeningStatus status;
     private String externalTransactionId;
     private Instant screenedAt;
@@ -34,11 +45,11 @@ public class ScreeningResult {
         this.status = status;
     }
 
-    public String getScreeningId() {
+    public Long getScreeningId() {
         return screeningId;
     }
 
-    public void setScreeningId(String screeningId) {
+    public void setScreeningId(Long screeningId) {
         this.screeningId = screeningId;
     }
 

@@ -1,4 +1,4 @@
-package com.aml.sanctionsscreeningservice.model;
+package com.aml.sanctionsscreeningservice.sanctions.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,6 +8,6 @@ import jakarta.persistence.Id;
 public class SanctionedPerson {
     @Id
     @GeneratedValue
-    private String userId;
+    private Long userId;
     private String fullName;
 }

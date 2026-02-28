@@ -44,8 +44,7 @@ public class SanctionsScreeningService {
         ScreeningResult screenedPerson = new ScreeningResult();
         if (person.isPresent()) {
             screenedPerson.setStatus(ScreeningStatus.MATCH);
-        }
-        else {
+        } else {
             screenedPerson.setStatus(ScreeningStatus.CLEAR);
         }
 

@@ -19,8 +19,8 @@ import java.util.Objects;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackageClasses = SanctionedPersonRepository.class,
-entityManagerFactoryRef = "sanctionsEntityManagerFactory",
-transactionManagerRef = "sanctionsTransactionManager")
+        entityManagerFactoryRef = "sanctionsEntityManagerFactory",
+        transactionManagerRef = "sanctionsTransactionManager")
 public class SanctionsDatabaseConfig {
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.sanctions")

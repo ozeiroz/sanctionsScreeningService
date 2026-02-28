@@ -14,4 +14,5 @@ public record Transaction(
         String merchantId,
         String country,
         Instant occuredAt
-) {}
+) {
+}
